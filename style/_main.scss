@@ -1,0 +1,265 @@
+/* Aca empieza el main*/
+
+.inicio {
+  margin-left: 16px;
+  margin-right: 16px;
+  margin-top: 20px;
+}
+.inicio h1 {
+  font-size: 36px;
+  color: #060a24;
+}
+.inicio p {
+  font-family: IBMPlexMono;
+  font-size: 14px;
+  color: #060a24;
+  letter-spacing: 0;
+  line-height: 22px;
+}
+
+.botonConoce {
+  width: 288px;
+  max-width: 288px;
+  margin-bottom: 20px;
+}
+button {
+  background-color: #00f0b8;
+  color: #060a24;
+  margin-top: 36px;
+  padding: 16px;
+  font-size: 16px;
+  line-height: 24px;
+  border-style: none;
+  font-family: IBMPlexMono-Medium;
+}
+
+button:hover {
+  background-color: #0000fe;
+  background-image: linear-gradient(225deg, #0000fe 0%, #00f0b8 100%);
+  color: #ffffff;
+  transition: all 1s ease;
+}
+/* Aca empieza el seccion episodios*/
+
+.episodios {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 1200px;
+  background-color: blue;
+  background-image: linear-gradient(225deg, #0000ff 0%, #0000a3 100%);
+  /*clip-path: polygon(100% 0, 100% 85%, 0 100%, 0 15%); */
+  clip-path: polygon(100% 0, 100% 96%, 0 100%, 0 4%);
+}
+.episodios h2 {
+  margin-left: 16px;
+  margin-top: 65px;
+  color: #ffffff;
+  align-self: flex-start;
+  font-size: 36px;
+  letter-spacing: 0;
+  line-height: 42px;
+}
+.podcast {
+  max-width: 289px;
+  height: 900px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-content: center;
+  align-items: center;
+  padding: 11px;
+}
+.javascriptDS,
+  .html_cssDS,
+  .officeDS,
+  .graphDS  {
+  max-width: 289px;
+  max-height: 232px;
+  margin-bottom: 11px;
+}
+
+iframe{
+    overflow: hidden;
+    width: 290px;
+    height: 232px;
+    margin-top: 10px;
+  }
+
+/* Aca empieza el seccion venimos*/
+.venimos {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-content: center;
+  align-items: center;
+  padding: 11px;
+
+    /*background-color: blue;
+    background-image: linear-gradient(225deg, #0000A3 0%, #0000FF 100%);
+    clip-path: polygon(0 0, 100% 0, 100% 0, 0 15%);*/
+}
+
+.phone {
+  order: 0;
+  width: 360px;
+  height: 519px;
+  z-index: 9000;
+}
+.containetVenimos {
+  display: flex;
+  flex-direction: column;
+  order: 1;
+  line-height: 16px;
+}
+.containetVenimos h2 {
+  margin-bottom: 8px;
+  line-height: initial;
+  font-size: 36px;
+  color: #060a24;
+  letter-spacing: 0;
+  line-height: 42px;
+}
+.containetVenimos p {
+  font-family: IBMPlexMono;
+  font-size: 14px;
+  color: #060a24;
+  letter-spacing: 0;
+  line-height: 22px;
+}
+/* Aca empieza el seccion invitadas*/
+.invitadas h2 {
+  margin-top: 54px;
+  margin-left: 16px;
+  font-size: 36px;
+  color: #060a24;
+  letter-spacing: 0;
+  line-height: 42px;
+}
+.grace,
+.katie,
+.margaret,
+.univac,
+.operators,
+.susan {
+  max-width: 320px;
+  max-height: 243px;
+  &:hover{
+    transform: scale(1.06,1.06);
+  }
+}
+.chicas {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Aca empieza el seccion temas*/
+.temas h2 {
+  margin-left: 16px;
+  margin-top: 45px;
+  font-size: 36px;
+  color: #060a24;
+  letter-spacing: 0;
+  line-height: 42px;
+}
+.contenedorTemas {
+  display: flex;
+  flex-direction: column;
+}
+.trabajo,
+.repensando,
+.bases,
+.seguridad {
+  align-self: center;
+
+  margin-top: 37px;
+}
+.temas label {
+  align-self: center;
+  font-size: 24px;
+  color: #060a24;
+  letter-spacing: 0;
+  text-align: center;
+  padding: 13px;
+}
+.trabajo {
+  order: 0;
+}
+.trabajoRemoto {
+  order: 1;
+}
+.repensando {
+  order: 2;
+}
+.repensadoProgramacion {
+  order: 3;
+}
+.bases {
+  order: 4;
+}
+.basesCodigo {
+  order: 5;
+}
+.seguridad {
+  order: 6;
+}
+.seguridadInfo {
+  order: 7;
+}
+
+/* Aca empieza el seccion temas*/
+.novedades {
+  align-content: center;
+  text-align: center;
+  background-color: blue;
+  background-image: linear-gradient(225deg, #0000ff 0%, #0000a3 100%);
+  clip-path: polygon(0 4%, 100% 0, 100% 100%, 0 100%);
+  height: 390px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.novedades h2 {
+  margin-top: 106px;
+  font-size: 48px;
+  color: #ffffff;
+  font-size: 36px;
+  letter-spacing: 0;
+  line-height: 42px;
+}
+.botonEscucha {
+  max-width: 300px;
+  margin-bottom: 60px;
+}
+
+footer {
+  display: flex;
+  text-align: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  background-color: #ffffff;
+  padding: 24px;
+  font-size: 16px;
+}
+footer p {
+  align-self: center;
+  margin-left: 30px;
+  font-size: 14px;
+  color: #060a24;
+  letter-spacing: 3px;
+  line-height: 22px;
+}
+footer .redes .redesLogos {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  color: #060a24;
+  list-style: none;
+}
+
+footer .redes .redesLogos li {
+  margin: 15px;
+}

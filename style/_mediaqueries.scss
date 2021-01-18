@@ -1,0 +1,281 @@
+/*menu simple con tamaño menor a 1000px*/
+@media screen and (min-width: 1000px) {
+  header {
+    margin-top: 15px;
+  }
+  header nav .menu ul {
+    position: relative;
+    top: 0;
+    right: 0;
+    overflow: hidden;
+    background: unset;
+    height: unset;
+  }
+  header nav .menu ul li {
+    padding: 5px 15px;
+    display: inline-block;
+  }
+  header nav .menu ul li:hover {
+    background: unset;
+    color: #00f3bb;
+    text-decoration: line-through;
+    transition: all 1s ease;
+  }
+  header nav .menu ul li a {
+    padding: unset;
+    line-height: unset;
+    color: #060a24;
+  }
+  header nav .menu ul li a:hover {
+    color: unset;
+  }
+  header nav .menu input {
+    display: none;
+  }
+  header nav .menu span {
+    display: none;
+  }
+  /* Aca empieza el main*/
+
+  .inicio {
+    margin-left: 200px;
+    margin-right: 400px;
+  }
+
+  .inicio h1 {
+    font-size: 58px;
+    color: #060a24;
+    margin-top: 100px;
+  }
+  .inicio p {
+    font-size: 16px;
+    color: #060a24;
+    margin-right: 100px;
+    line-height: 24px;
+  }
+
+  button {
+    background-color: #00f0b8;
+    color: #060a24;
+    margin-top: 36px;
+    padding: 16px;
+    font-size: 16px;
+    line-height: 24px;
+    border-style: none;
+    font-family: IBMPlexMono-Medium;
+  }
+
+  button:hover {
+    background-color: #0000fe;
+    background-image: linear-gradient(225deg, #0000fe 0%, #00f0b8 100%);
+    color: #ffffff;
+    transition: all 1s ease;
+  }
+  /* Aca empieza el seccion episodios*/
+
+  .episodios {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    background-color: blue;
+    background-image: linear-gradient(225deg, #0000ff 0%, #0000a3 100%);
+    clip-path: polygon(100% 0, 100% 85%, 0 100%, 0 15%);
+    /*clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 15%);*/
+    height: 970px;
+  }
+  .episodios h2 {
+    margin-left: 200px;
+    margin-top: 180px;
+    margin-bottom: 55px;
+    color: #ffffff;
+    align-self: flex-start;
+    font-size: 48px;
+  }
+  .podcast {
+    max-width: 1100px;
+    height: 500px;
+    padding: 15px;
+    display: grid;
+
+    /* Tamaño fijo */
+    grid-template-columns: 500px 500px;
+    grid-template-rows: 232px 232px;
+
+    /* Es para darle "Margen" entre cada uno de los elementos */
+    grid-gap: 50px;
+    iframe{
+        overflow: hidden;
+        width: 500px;
+        height: 245px;
+        margin-top: 10px;
+      }
+  }
+
+  /* Aca empieza el seccion venimos*/
+  .venimos {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-content: center;
+    align-items: center;
+    padding: 0px;
+    height: 374px;
+
+    /*background-color: blue;
+    background-image: linear-gradient(225deg, #0000A3 0%, #0000FF 100%);
+    clip-path: polygon(0 0, 100% 0, 100% 0, 0 15%);*/
+  }
+
+  .phone {
+    order: 0;
+    width: 457.6px;
+    height: 660px;
+    margin-left: 200px;
+    float: left;
+    z-index: 9000;
+  }
+  .containetVenimos {
+    display: flex;
+    flex-direction: column;
+    order: 1;
+    line-height: 24px;
+  }
+  .containetVenimos h2 {
+    margin-bottom: 24px;
+    font-size: 48px;
+  }
+  .containetVenimos p {
+    margin-right: 220px;
+    font-family: IBMPlexMono;
+    font-size: 16px;
+    line-height: 24px;
+  }
+  /* Aca empieza el seccion invitadas*/
+  .invitadas h2 {
+    margin-left: 200px;
+    margin-bottom: 36px;
+    font-size: 48px;
+    margin-top: 190px;
+  }
+  .grace,
+  .katie,
+  .margaret,
+  .univac,
+  .operators,
+  .susan {
+    max-width: 481px;
+    max-height: 364px;
+  }
+  .chicas {
+    display: grid;
+    max-width: 1440px;
+    height: 728px;
+
+    grid-template-columns: 415px 415px 415px;
+    grid-template-rows: 364px 364px;
+  }
+  /* Aca empieza el seccion temas*/
+  .temas h2 {
+    padding: 10px;
+    margin-left: 180px;
+    font-size: 48px;
+  }
+  .contenedorTemas {
+    display: grid;
+    max-width: 1040px;
+    height: 244px;
+    padding: 15px;
+    margin: auto;
+    grid-template-columns: 220px 220px 220px 220px;
+    grid-template-rows: 130px 64px;
+    grid-gap: 10px;
+    align-items: center;
+    text-align: center;
+  }
+  .trabajo,
+  .repensando,
+  .bases,
+  .seguridad {
+    align-self: center;
+    justify-self: center;
+  }
+
+  .trabajo {
+    order: 0;
+  }
+  .trabajoRemoto {
+    order: 4;
+  }
+  .repensando {
+    order: 1;
+  }
+  .repensadoProgramacion {
+    order: 5;
+  }
+  .bases {
+    order: 2;
+  }
+  .basesCodigo {
+    order: 6;
+  }
+  .seguridad {
+    order: 3;
+  }
+  .seguridadInfo {
+    order: 7;
+  }
+
+  /* Aca empieza el seccion temas*/
+  .novedades {
+    align-content: center;
+    text-align: center;
+    background-color: blue;
+    background-image: linear-gradient(225deg, #0000ff 0%, #0000a3 100%);
+    clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 25%);
+    height: 450px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .novedades h2 {
+    margin-top: 198px;
+    font-size: 48px;
+    color: #ffffff;
+  }
+  .botonEscucha {
+    max-width: 300px;
+  }
+
+  footer {
+    display: flex;
+
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: center;
+    align-items: stretch;
+
+    background-color: #ffffff;
+
+    padding: 26px;
+    margin-left: 74px;
+    margin-right: 74px;
+
+    font-size: 16px;
+  }
+
+  footer .redes .redesLogos {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    color: #060a24;
+    list-style: none;
+  }
+
+  footer .redes .redesLogos li {
+    margin: 10px;
+  }
+}
